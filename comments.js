@@ -32,7 +32,7 @@ app.post('/comments', async (req, res) => {
   const comment = new Comment(req.body)
   await comment.save()
   res.send(comment)
-})
+}) 
 
 // GET /comments
 app.get('/comments', async (req, res) => {
